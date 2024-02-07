@@ -1,0 +1,15 @@
+<!-- res/menu/dropdown_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/personalInfo"
+        android:title="@string/personal_information" />
+    <item
+        android:id="@+id/bankInfo"
+        android:title="@string/bank_information" />
+    <item
+        android:id="@+id/docInfo"
+        android:title="@string/document_information" />
+    <item
+        android:id="@+id/passInfo"
+        android:title="@string/password_information" />
+</menu>

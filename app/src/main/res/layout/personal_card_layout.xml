@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/personalCard"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="11dp"
+            android:background="#FFFFFF"
+            android:textDirection="ltr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/personalHeading"
+                android:text="@string/personal"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/personFirstName"
+                android:textSize="16sp"
+                android:layout_below="@id/personalHeading"
+                android:layout_marginTop="11dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/personLastName"
+                android:textSize="16sp"
+                android:layout_below="@+id/personFirstName"
+                android:layout_marginTop="11dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/personDob"
+                android:textSize="16sp"
+                android:layout_below="@+id/personLastName"
+                android:layout_marginTop="11dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/personPhone"
+                android:textSize="16sp"
+                android:layout_below="@+id/personDob"
+                android:layout_marginTop="11dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/personEmail"
+                android:textSize="16sp"
+                android:layout_below="@+id/personPhone"
+                android:layout_marginTop="11dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

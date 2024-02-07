@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signUpPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/new_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textSize="36sp"
+            android:layout_marginTop="44dp"
+            android:textColor="@color/white"
+            android:id="@+id/signUp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputField1"
+            android:layout_below="@+id/signUp"
+            android:layout_marginTop="32dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_user_name"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:id="@+id/signUpUserName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputField2"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/inputField1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_full_name"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:id="@+id/signUpFullName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputField6"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/inputField2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_a_password"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:id="@+id/signUpPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpButton"
+            android:layout_below="@id/inputField6"
+            android:text="@string/sign_up"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentEnd="true"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signInText"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:cursorVisible="true"
+            android:pointerIcon="hand"
+            android:layout_marginTop="38dp"
+            android:layout_below="@+id/inputField6" />
+
+    </RelativeLayout>
+
+</ScrollView>

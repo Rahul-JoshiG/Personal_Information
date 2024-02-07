@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity"
+    android:id="@+id/loginPage"
+    android:padding="11dp"
+    android:background="@drawable/new_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/logIn" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputField1"
+        android:layout_below="@+id/logIn"
+        android:layout_marginTop="22dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_user_name"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputField2"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/inputField1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logInButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputField2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="11dp"
+        android:text="@string/log_in"
+        android:textSize="20sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerText"
+            android:text="@string/don_t_have_an_account"
+            android:textStyle="italic"
+            android:cursorVisible="true"
+            android:pointerIcon="hand"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/logInButton"
+            android:layout_centerHorizontal="true"/>
+
+<!--        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_password"
+            android:id="@+id/forgetPassword"
+            android:textStyle="italic"
+            android:textColor="#4900EA"
+            android:cursorVisible="true"
+            android:pointerIcon="hand"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/logInButton"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/design_by_rahul_joshi"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:textAllCaps="true"/>
+</RelativeLayout>

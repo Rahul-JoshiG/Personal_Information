@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/startPage"
+    android:padding="11dp"
+    android:background="@drawable/new_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appName"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/card"
+        android:layout_below="@+id/appName"
+        android:layout_marginTop="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cardChild">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/logo_for_app" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/getStart"
+        android:text="@string/let_s_start"
+        android:layout_below="@+id/card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        style="@style/ThemeOverlay.Material3.Button.TonalButton"/>
+
+</RelativeLayout>
